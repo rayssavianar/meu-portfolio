@@ -1,0 +1,9 @@
+:root {
+      --bg-dark: #0b1d3a;
+      --bg-light: #1b3f73;
+      --text-color: #ffffff;
+      --card-bg: rgba(255,255,255,0.08);
+      --skill-bg: rgba(255,255,255,0.1);
+      --primary: #4da3ff;
+      --border-color: #ffffff;
+    }
