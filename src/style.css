@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, var(--bg-light), var(--bg-dark));
+    color: var(--text-color);
+    border: 2px solid red;
+}
+
+header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+      text-align: left;
+    }
