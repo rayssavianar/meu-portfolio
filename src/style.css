@@ -1,7 +1,6 @@
 body {
     margin: 0;
     height: 100vh;
-    font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, var(--bg-light), var(--bg-dark));
     color: var(--text-color);
     border: 2px solid red;
@@ -10,9 +9,25 @@ body {
 header {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      margin: 60px;
+      justify-content: space-between;
       padding: 40px 20px;
       gap: 20px;
-      text-align: left;
+      text-align: center;
     }
+
+header .section{
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 60px;
+
+}
+
+main .cabecalho2{
+    display: flex;
+}
+
+main .foto{
+    
+}
