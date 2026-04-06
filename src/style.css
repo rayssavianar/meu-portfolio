@@ -3,15 +3,14 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom right, var(--bg-light), var(--bg-dark));
     color: var(--text-color);
-    border: 2px solid red;
 }
 
 header {
       display: flex;
       flex-wrap: wrap;
-      margin: 60px;
+      margin: 40px;
       justify-content: space-between;
-      padding: 40px 20px;
+      padding: 20px 20px;
       gap: 20px;
       text-align: center;
     }
@@ -26,8 +25,31 @@ header .section{
 
 main .cabecalho2{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-main .foto{
+main .cabecalho2 .foto{
+    margin-left: 5%;
+    width: 25%;
+    border: 8px solid white;
+    border-radius: 2px;
+}
+
+main .cabecalho2 .about{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 8%;
+}
+main .cabecalho2 .about h1{
+    font-size: 60px;
+    width: 70%;
+}
+
+main .cabecalho2 .about p{
+    
+    font-size: 30px;
+    width: 70%;
     
 }
