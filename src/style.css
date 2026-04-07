@@ -9,12 +9,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 15px 40px;
     margin-bottom: 60px;
     gap: 20px;
     text-align: center;
     color: var(--bg-light);
     background-color: var(--text-color);
+    backdrop-filter: blur(10px);
 }
 
 header .cabecalho {
@@ -28,31 +29,39 @@ header .cabecalho .logo {
     font-size: 20px;
 }
 
-header .section {
+header .cabecalho .section {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-weight: 700;
     font-size: 18px;
-    gap: 60px;
+    gap: 90px;
 }
 
+header a{
+    transition: 0.3s;
+}
 
-main .apresentacao {
+header a:hover{
+    color: #4da3ff;
+}
+
+main .hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-main .apresentacao .foto {
+main .hero .foto {
     margin-left: 5%;
     width: 25%;
     border: 8px solid white;
     border-radius: 2px;
+    border-color: #cfe3ff;
     transition: 1.0s;
 }
 
-main .apresentacao .about {
+main .hero .about {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -60,12 +69,20 @@ main .apresentacao .about {
     transition: 1.0s;
 }
 
-main .apresentacao .about h1 {
-    font-size: 60px;
+main .hero .about h1 {
+    font-size: 70px;
+    line-height: 1.2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     width: 70%;
 }
 
-main .apresentacao .about p {
+main .hero .about p {
+    margin-top: 15px;
     font-size: 30px;
     width: 70%;
+}
+
+main .hero .about .linguagenspng{
+    transition: 0.3s;
+    width: 30%;
 }
