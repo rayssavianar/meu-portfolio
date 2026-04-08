@@ -13,14 +13,13 @@ header {
     padding: 10px 30px;
     margin: 20px 40px;
     gap: 20px;
+    position: sticky;
+    top: 20px;
     text-align: center;
-
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
-
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-
     color: var(--bg-dark);
 }
 
@@ -69,9 +68,8 @@ main .hero {
 
 main .hero .foto {
     margin-left: 5%;
-    width: 25%;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     transition: 1.0s;
 }
@@ -91,7 +89,7 @@ main .hero .about h1 {
     width: 90%;
 }
 
-main .hero .about .span-front{
+main .hero .about .span-front {
     color: var(--primary);
 }
 
@@ -101,17 +99,17 @@ main .hero .about p {
     max-width: 500px;
 }
 
-main .hero .about .span-html{
+main .hero .about .span-html {
     font-weight: 600;
     color: rgba(205, 67, 16, 0.965);
 }
 
-main .hero .about .span-css{ 
+main .hero .about .span-css {
     font-weight: 600;
     color: var(--primary);
 }
 
-main .hero .about .span-js{
+main .hero .about .span-js {
     font-weight: 600;
     color: yellow;
 }
@@ -119,4 +117,64 @@ main .hero .about .span-js{
 main .hero .about .linguagenspng {
     transition: 0.3s;
     width: 180px;
+}
+
+main .sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 20px 40px;
+    margin-top: 70px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+main .sobre:hover {
+    transform: translateY(-5px);
+}
+
+main .sobre .foto-real {
+    margin-left: 3%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: 1.0s;
+}
+
+main .sobre .resumosobre {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 8%;
+    transition: 1.0s;
+}
+
+.foto,
+.foto-real {
+    width: clamp(220px, 25%, 320px);
+}
+
+main .sobre .resumosobre h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+}
+
+main .sobre .resumosobre h2 {
+    font-size: 30px;
+    color: #4da3ff;
+    font-weight: 500;
+}
+main .sobre .resumosobre p {
+    margin-top: 15px;
+    font-size: 27px;
+    line-height: 1.6;
+    color: #cfe3ff;
 }
