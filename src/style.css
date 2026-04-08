@@ -10,17 +10,18 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 40px;
     padding: 10px 30px;
+    margin: 20px 40px;
     gap: 20px;
     text-align: center;
-    color: var(--bg-light);
-    background: rgba(255, 255, 255, 0.9);
+
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
     border-radius: 15px;
-    position: sticky;
-    top: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    color: var(--bg-dark);
 }
 
 
@@ -40,29 +41,30 @@ header .cabecalho .section {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     gap: 40px;
 }
 
 header a {
+    text-decoration: none;
     color: var(--bg-dark);
     opacity: 0.8;
+    transition: 0.3s;
 }
 
 header a:hover {
-    transition: 0.3s;
+    color: #4da3ff;
     opacity: 1;
-    color: var(--primary);
 }
 
 main .hero {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    gap: 30px;
+    gap: 80px;
     padding: 40px;
+    min-height: 80vh;
 }
 
 main .hero .foto {
@@ -86,13 +88,32 @@ main .hero .about h1 {
     font-size: 70px;
     line-height: 1.2;
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    width: 70%;
+    width: 90%;
+}
+
+main .hero .about .span-front{
+    color: var(--primary);
 }
 
 main .hero .about p {
     margin-top: 15px;
     font-size: 30px;
     max-width: 500px;
+}
+
+main .hero .about .span-html{
+    font-weight: 600;
+    color: rgba(205, 67, 16, 0.965);
+}
+
+main .hero .about .span-css{ 
+    font-weight: 600;
+    color: var(--primary);
+}
+
+main .hero .about .span-js{
+    font-weight: 600;
+    color: yellow;
 }
 
 main .hero .about .linguagenspng {
