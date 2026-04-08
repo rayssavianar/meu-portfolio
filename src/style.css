@@ -1,22 +1,28 @@
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to bottom right, var(--bg-light), var(--bg-dark));
     color: var(--text-color);
+    letter-spacing: 0.3px;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px 40px;
-    margin-bottom: 60px;
+    margin: 20px 40px;
+    padding: 10px 30px;
     gap: 20px;
     text-align: center;
     color: var(--bg-light);
-    background-color: var(--text-color);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
 }
+
 
 header .cabecalho {
     display: flex;
@@ -26,7 +32,8 @@ header .cabecalho {
 }
 
 header .cabecalho .logo {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 header .cabecalho .section {
@@ -35,36 +42,42 @@ header .cabecalho .section {
     align-items: center;
     font-weight: 700;
     font-size: 18px;
-    gap: 90px;
+    gap: 40px;
 }
 
-header a{
+header a {
+    color: var(--bg-dark);
+    opacity: 0.8;
+}
+
+header a:hover {
     transition: 0.3s;
-}
-
-header a:hover{
-    color: #4da3ff;
+    opacity: 1;
+    color: var(--primary);
 }
 
 main .hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-height: 80vh;
+    gap: 30px;
+    padding: 40px;
 }
 
 main .hero .foto {
     margin-left: 5%;
     width: 25%;
-    border: 8px solid white;
-    border-radius: 2px;
-    border-color: #cfe3ff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border-radius: 10px;
     transition: 1.0s;
 }
 
 main .hero .about {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     margin-left: 8%;
     transition: 1.0s;
 }
@@ -79,10 +92,10 @@ main .hero .about h1 {
 main .hero .about p {
     margin-top: 15px;
     font-size: 30px;
-    width: 70%;
+    max-width: 500px;
 }
 
-main .hero .about .linguagenspng{
+main .hero .about .linguagenspng {
     transition: 0.3s;
-    width: 30%;
+    width: 180px;
 }
