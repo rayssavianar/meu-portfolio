@@ -13,6 +13,17 @@ a {
   color: inherit;
 }
 
+h1{
+  font-size: var(--size-title);
+}
+
+h2{
+  font-size: var(--size-subtitle);
+}
+
+p{
+  font-size: var(--size-text);
+}
 body {
   font-family: 'Outfit', Helvetica, sans-serif;
 }

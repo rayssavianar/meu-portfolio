@@ -72,9 +72,8 @@ main .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: var(--size-space);
     padding: 40px;
-    min-height: 80vh;
 }
 
 main .hero .foto {
@@ -88,13 +87,12 @@ main .hero .foto {
 main .hero .about {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--size-space);
     margin-left: 8%;
     transition: 1.0s;
 }
 
 main .hero .about h1 {
-    font-size: 70px;
     line-height: 1.2;
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     width: 90%;
@@ -106,7 +104,6 @@ main .hero .about .span-front {
 
 main .hero .about p {
     margin-top: 15px;
-    font-size: 30px;
     max-width: 500px;
 }
 
@@ -134,7 +131,7 @@ main .sobre {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: var(--size-space);
     margin: 20px 40px;
     margin-top: 70px;
     padding: 40px;
@@ -162,7 +159,7 @@ main .sobre .foto-real {
 main .sobre .resumosobre {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--size-space);
     margin-left: 8%;
     transition: 1.0s;
 }
@@ -174,20 +171,17 @@ main .sobre .resumosobre {
 }
 
 main .sobre .resumosobre h1 {
-    font-size: 50px;
     line-height: 1.2;
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     max-width: 500px;
 }
 
 main .sobre .resumosobre h2 {
-    font-size: 30px;
     color: #4da3ff;
     font-weight: 500;
 }
 main .sobre .resumosobre p {
     margin-top: 15px;
-    font-size: 27px;
     line-height: 1.6;
     color: #cfe3ff;
 }

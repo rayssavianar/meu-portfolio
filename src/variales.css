@@ -1,9 +1,16 @@
 :root {
-      --bg-dark: #0b1d3a;
-      --bg-light: #1b3f73;
-      --text-color: #ffffff;
-      --card-bg: rgba(255,255,255,0.08);
-      --skill-bg: rgba(255,255,255,0.1);
-      --primary: #4da3ff;
-      --border-color: #ffffff;
-    }
+  --bg-dark: #0b1d3a;
+  --bg-light: #1b3f73;
+  --text-color: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --skill-bg: rgba(255, 255, 255, 0.1);
+  --primary: #4da3ff;
+  --border-color: #ffffff;
+    /* tamanho de texto */
+
+  --size-title: clamp(28px, 5vw, 50px);
+  --size-subtitle: clamp(14px, 2.5vw, 30px);
+  --size-text: clamp(16px, 2vw, 22px);
+  --size-space: clamp(20px, 5vw, 30px);
+  --size-images: clamp(220px, 25vw, 320px);
+}
