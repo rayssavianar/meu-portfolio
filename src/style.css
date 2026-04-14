@@ -22,7 +22,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 30px;
-    margin: 20px 40px;
+    max-width: 1200px;
+    margin: 20px auto;
     gap: 20px;
     position: sticky;
     top: 20px;
@@ -74,6 +75,8 @@ main .hero {
     align-items: center;
     gap: var(--size-space);
     padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 main .hero .foto {
@@ -132,7 +135,8 @@ main .sobre {
     justify-content: center;
     align-items: center;
     gap: var(--size-space);
-    margin: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 70px;
     padding: 40px;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -140,7 +144,7 @@ main .sobre {
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 
 main .sobre:hover {
@@ -152,8 +156,7 @@ main .sobre .foto-real {
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    opacity: 1;
-    transition-delay: 0.2s;
+    transition: 0.5s ease;
 }
 
 main .sobre .resumosobre {
@@ -161,13 +164,13 @@ main .sobre .resumosobre {
     flex-direction: column;
     gap: var(--size-space);
     margin-left: 8%;
-    transition: 1.0s;
+    transition: 0.5s ease;
 }
 
 .foto,
 .foto-real {
     width: clamp(220px, 25%, 320px);
-    transition: 0.6s ease;
+    transition: 0.5s ease;
 }
 
 main .sobre .resumosobre h1 {
@@ -185,3 +188,61 @@ main .sobre .resumosobre p {
     line-height: 1.6;
     color: #cfe3ff;
 }
+
+main .projects h1{
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 70px;
+    padding: 20px 40px;
+    text-align: center;
+    background: var(--section-highlight-bg);
+    border: 1px solid var(--section-highlight-bg);
+    border-radius: 15px;
+    color: var(--primary);
+}
+
+/*      RESPONSIVO        */
+
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+    main .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    main .hero .about {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    main .sobre {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    main .sobre .resumosobre {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    main .sobre .resumosobre h2{
+        font-size: 20px;
+    }
+
+}
+
+/* TELAS MAIORES */
+
+@media (min-width: 1400px) {
+    header,
+    main .hero,
+    main .sobre {
+        max-width: 1400px;
+    }
+} 
+
+

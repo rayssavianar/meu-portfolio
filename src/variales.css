@@ -6,9 +6,20 @@
   --skill-bg: rgba(255, 255, 255, 0.1);
   --primary: #4da3ff;
   --border-color: #ffffff;
-    /* tamanho de texto */
 
-  --size-title: clamp(28px, 5vw, 50px);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --card-shadow: rgba(0, 0, 0, 0.3);
+
+  --hover-border: rgba(77, 163, 255, 0.5);
+  --hover-shadow: rgba(77, 163, 255, 0.2);
+
+  --section-highlight-bg: rgba(77, 163, 255, 0.08);
+  --section-highlight-border: rgba(77, 163, 255, 0.4);
+
+  --button-hover: #6bb8ff;
+  /* tamanho de texto */
+
+  --size-title: clamp(28px, 5vw, 40px);
   --size-subtitle: clamp(14px, 2.5vw, 30px);
   --size-text: clamp(16px, 2vw, 22px);
   --size-space: clamp(20px, 5vw, 30px);
