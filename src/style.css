@@ -6,13 +6,13 @@ body {
     letter-spacing: 0.3px;
 }
 
-body.scrolled .foto {
+body.scrolled .hero-image {
     opacity: 0;
     transform: translateY(-60px);
     filter: blur(5px);
 }
 
-body.scrolled .foto-real {
+body.scrolled .about-image {
     opacity: 1;
     transform: translateY(-20px);
 }
@@ -36,19 +36,19 @@ header {
 }
 
 
-header .cabecalho {
+header .header-container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     width: 100%;
 }
 
-header .cabecalho .logo {
+header .header-container .header-logo {
     font-size: 22px;
     font-weight: 600;
 }
 
-header .cabecalho .section {
+header .header-container .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -79,7 +79,7 @@ main .hero {
     margin: 0 auto;
 }
 
-main .hero .foto {
+main .hero .hero-image {
     margin-left: 5%;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -87,7 +87,7 @@ main .hero .foto {
     transition: 1.0s;
 }
 
-main .hero .about {
+main .hero .hero-content {
     display: flex;
     flex-direction: column;
     gap: var(--size-space);
@@ -95,42 +95,42 @@ main .hero .about {
     transition: 1.0s;
 }
 
-main .hero .about h1 {
+main .hero .hero-content h1 {
     line-height: 1.2;
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     width: 90%;
 }
 
-main .hero .about .span-front {
+main .hero .hero-content .span-front {
     color: var(--primary);
 }
 
-main .hero .about p {
+main .hero .hero-content p {
     margin-top: 15px;
     max-width: 500px;
 }
 
-main .hero .about .span-html {
+main .hero .hero-content .span-html {
     font-weight: 600;
     color: rgba(205, 67, 16, 0.965);
 }
 
-main .hero .about .span-css {
+main .hero .hero-content .span-css {
     font-weight: 600;
     color: var(--primary);
 }
 
-main .hero .about .span-js {
+main .hero .hero-content .span-js {
     font-weight: 600;
     color: yellow;
 }
 
-main .hero .about .linguagenspng {
+main .hero .hero-content .tech-icons {
     transition: 0.3s;
     width: 180px;
 }
 
-main .sobre {
+main .about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,11 +147,11 @@ main .sobre {
     transition: 0.5s ease;
 }
 
-main .sobre:hover {
+main .about:hover {
     transform: translateY(-5px);
 }
 
-main .sobre .foto-real {
+main .about .about-image {
     margin-left: 3%;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -159,7 +159,7 @@ main .sobre .foto-real {
     transition: 0.5s ease;
 }
 
-main .sobre .resumosobre {
+main .about .resumosobre {
     display: flex;
     flex-direction: column;
     gap: var(--size-space);
@@ -167,24 +167,24 @@ main .sobre .resumosobre {
     transition: 0.5s ease;
 }
 
-.foto,
-.foto-real {
+.hero-image,
+.about-image {
     width: clamp(220px, 25%, 320px);
     transition: 0.5s ease;
 }
 
-main .sobre .resumosobre h1 {
+main .about .resumosobre h1 {
     line-height: 1.2;
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     max-width: 500px;
 }
 
-main .sobre .resumosobre h2 {
+main .about .resumosobre h2 {
     color: #4da3ff;
     font-weight: 500;
 }
 
-main .sobre .resumosobre p {
+main .about .resumosobre p {
     margin-top: 15px;
     line-height: 1.6;
     color: #cfe3ff;
@@ -238,7 +238,7 @@ main .projects .title h1 {
         padding: 20px;
     }
 
-    main .hero .about {
+    main .hero .hero-content {
         margin-left: 0;
         align-items: center;
     }
