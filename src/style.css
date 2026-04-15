@@ -183,23 +183,48 @@ main .sobre .resumosobre h2 {
     color: #4da3ff;
     font-weight: 500;
 }
+
 main .sobre .resumosobre p {
     margin-top: 15px;
     line-height: 1.6;
     color: #cfe3ff;
 }
 
-main .projects h1{
-    font-size: 40px;
+main .projects .title {
     margin: 20px;
     margin-top: 70px;
     padding: 20px 40px;
-    text-align: center;
     background: var(--section-highlight-bg);
     border: 1px solid var(--section-highlight-bg);
     border-radius: 15px;
+
+}
+
+main .projects .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+main .projects .title .icone.code {
+    width: 40px;
+    height: 40px;
+    fill: #4da3ff;
+}
+
+main .projects .title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
     color: var(--primary);
 }
+
 
 /*      RESPONSIVO        */
 
@@ -229,7 +254,7 @@ main .projects h1{
         align-items: center;
     }
 
-    main .sobre .resumosobre h2{
+    main .sobre .resumosobre h2 {
         font-size: 20px;
     }
 
@@ -238,11 +263,10 @@ main .projects h1{
 /* TELAS MAIORES */
 
 @media (min-width: 1400px) {
+
     header,
     main .hero,
     main .sobre {
         max-width: 1400px;
     }
-} 
-
-
+}
