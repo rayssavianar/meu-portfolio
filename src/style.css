@@ -159,7 +159,7 @@ main .about .about-image {
     transition: 0.5s ease;
 }
 
-main .about .resumosobre {
+main .about .about-content {
     display: flex;
     flex-direction: column;
     gap: var(--size-space);
@@ -173,24 +173,24 @@ main .about .resumosobre {
     transition: 0.5s ease;
 }
 
-main .about .resumosobre h1 {
+main .about .about-content h1 {
     line-height: 1.2;
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     max-width: 500px;
 }
 
-main .about .resumosobre h2 {
+main .about .about-content h2 {
     color: #4da3ff;
     font-weight: 500;
 }
 
-main .about .resumosobre p {
+main .about .about-content p {
     margin-top: 15px;
     line-height: 1.6;
     color: #cfe3ff;
 }
 
-main .projects .title {
+main .projects .section-title {
     margin: 20px;
     margin-top: 70px;
     padding: 20px 40px;
@@ -200,7 +200,7 @@ main .projects .title {
 
 }
 
-main .projects .title{
+main .projects .section-title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,13 +208,13 @@ main .projects .title{
 
 }
 
-main .projects .title .icone.code {
+main .projects .section-title .icon.code {
     width: 40px;
     height: 40px;
     fill: #4da3ff;
 }
 
-main .projects .title h1 {
+main .projects .section-title h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,12 +249,12 @@ main .projects .title h1 {
         padding: 20px;
     }
 
-    main .sobre .resumosobre {
+    main .sobre .about-content {
         margin-left: 0;
         align-items: center;
     }
 
-    main .sobre .resumosobre h2 {
+    main .sobre .about-content h2 {
         font-size: 20px;
     }
 
