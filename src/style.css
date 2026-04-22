@@ -191,21 +191,15 @@ main .about .about-content p {
 }
 
 main .projects .section-title {
-    margin: 20px;
-    margin-top: 70px;
-    padding: 20px 40px;
-    background: var(--section-highlight-bg);
-    border: 1px solid var(--section-highlight-bg);
-    border-radius: 15px;
-
-}
-
-main .projects .section-title{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    margin: 20px;
+    margin-top: 70px;
+    padding: 20px 40px;
+    background: var(--section-highlight-bg);
+    border-radius: 15px;
 }
 
 main .projects .section-title .icon.code {
@@ -224,6 +218,82 @@ main .projects .section-title h1 {
     text-align: center;
     color: var(--primary);
 }
+
+main .projects .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    margin: 40px 80px;
+    gap: 10px;
+    padding: 20px;
+    background: var(--section-highlight-bg);
+    border: 1px solid var(--section-highlight-bg);
+    border-radius: 15px;
+    width: clamp(350px, 60%, 420px);
+    transition: 0.5s ease;
+}
+
+main .projects .project:hover {
+    transform: translateY(-5px);
+}
+
+main .projects .project .project-img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px; /* espaço pro texto */
+}
+
+main .projects .project h1{
+    font-size: 30px;
+}
+
+main .projects .project p{
+    width: 100%;
+}
+
+main .projects .project .project-techs{
+    width: 40%;
+}
+
+main .projects .project .projects-links{
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px;
+}
+
+main .projects .project .projects-links a{
+    text-align: center;
+    font-size: 30px;
+}
+
+main .projects .project .projects-links .link-project{
+    display: flex;
+    border: 6px solid var(--primary);
+    border-radius: 45px;
+    padding: 11px;
+    width: 100%;
+    color: var(--primary);
+}
+
+main .projects .project .projects-links .link-repository{
+   display: flex;
+   align-items: center;
+}
+
+main .projects .project .projects-links .repository{
+    display: flex;
+    gap: 10px;
+}
+
+main .projects .project .projects-links .repository .github-icon{
+    width: 20%;
+    fill: var(--text-color);
+}
+
+
+
+
 
 
 /*      RESPONSIVO        */
