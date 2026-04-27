@@ -17,6 +17,43 @@
   --section-highlight-border: rgba(77, 163, 255, 0.4);
 
   --button-hover: #6bb8ff;
+
+  /* CORES DO CARD */
+  /* BASE */
+  --bg-dark: #0b1d3a;
+  --bg-light: #1b3f73;
+  --text-color: #ffffff;
+
+  /* PRIMARY */
+  --primary: #4da3ff;
+  --primary-strong: #1b6edc;
+
+  /* TEXTOS */
+  --text-secondary: #cfe3ff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+
+  /* CARDS (glass effect) */
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-bg-soft: rgba(255, 255, 255, 0.02);
+
+  /* BORDER */
+  --border-soft: rgba(255, 255, 255, 0.12);
+  --border-highlight: rgba(77, 163, 255, 0.3);
+
+  /* SHADOW */
+  --shadow-default: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(77, 163, 255, 0.2);
+
+  /* GRADIENTS */
+  --gradient-primary: linear-gradient(135deg, #4da3ff, #1b6edc);
+  --gradient-card: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02));
+  --gradient-highlight: linear-gradient(90deg,
+      rgba(77, 163, 255, 0.2),
+      rgba(77, 163, 255, 0.05));
+
   /* tamanho de texto */
 
   --size-title: clamp(28px, 5vw, 40px);
