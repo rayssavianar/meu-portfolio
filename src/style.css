@@ -190,6 +190,10 @@ main .about .about-content p {
     color: #cfe3ff;
 }
 
+main .projects {
+    padding: 40px 20px;
+}
+
 main .projects .section-title {
     display: flex;
     justify-content: center;
@@ -219,19 +223,28 @@ main .projects .section-title h1 {
     color: var(--primary);
 }
 
+main .projects .div-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
 main .projects .project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 70px;
-    margin: 40px 80px;
+    width: 100%;
+    margin: 0;
     gap: 10px;
     padding: 20px;
-      background: var(--gradient-card);
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow-default);
+    background: var(--gradient-card);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-default);
     border-radius: 15px;
-    width: clamp(350px, 60%, 420px);
     transition: 0.5s ease;
 }
 
@@ -240,64 +253,66 @@ main .projects .project:hover {
     transform: translateY(-5px);
 }
 
-main .projects .project .project-img{
+main .projects .project .project-img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 15px; /* espaço pro texto */
+    margin-bottom: 15px;
+    /* espaço pro texto */
 }
 
-main .projects .project h1{
+main .projects .project h1 {
     font-size: 30px;
 }
 
-main .projects .project p{
+main .projects .project p {
     color: var(--text-secondary);
     width: 100%;
 }
 
-main .projects .project .project-techs{
+main .projects .project .project-techs {
     width: 40%;
 }
 
-main .projects .project .projects-links{
+main .projects .project .projects-links {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    gap: 20px;
-    margin-top: 15px;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: auto;
 }
 
-main .projects .project .projects-links a{
+main .projects .project .projects-links a {
+    margin-top: 10px;
     text-align: center;
-    font-size: 30px;
+    font-size: 16px;
 }
 
-main .projects .project .projects-links .link-project{
+main .projects .project .projects-links .link-project {
     border: 6px solid var(--primary);
     border-radius: 45px;
     padding: 11px;
-    width: 100%;
+    width: 90%;
     background: var(--gradient-primary);
-    color: var(--text-color); 
+    color: var(--text-color);
 }
 
 main .projects .project .projects-links .link-project:hover {
     transition: 0.9s;
-    background: black;  
-    border: black;  
+    background: black;
+    border: black;
 }
 
-main .projects .project .projects-links .link-repository{
-   display: flex;
-   align-items: center;
+main .projects .project .projects-links .link-repository {
+    display: flex;
+    align-items: center;
 }
 
-main .projects .project .projects-links .repository{
+main .projects .project .projects-links .repository {
     display: flex;
     gap: 10px;
 }
 
-main .projects .project .projects-links .repository .github-icon{
+main .projects .project .projects-links .repository .github-icon {
     width: 20%;
     fill: var(--text-color);
 }
@@ -345,9 +360,17 @@ main .projects .project .projects-links .repository .github-icon{
 
 @media (min-width: 1400px) {
 
-    header,
+    header {
+        max-width: 1800px;
+    }
+
     main .hero,
-    main .sobre {
-        max-width: 1400px;
+    main .about {
+        max-width: 1800px;
+
+    }
+
+    main .projects .div-projects{
+        max-width: 1800px;
     }
 }
